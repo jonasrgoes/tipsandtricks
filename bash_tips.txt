@@ -5,4 +5,4 @@ awk '{$1=$1};1'
 grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b"
 
 ### PROCURAR ARQUIVOS E DIRETORIOS COM MAIS DE 1G DE TAMANHO NO DIR ATUAL
-du -cha . | sed -En '/^([0-9],[0-9]G)/p'
+du -cha . | sed -En '/^([0-9]+,[0-9]+G)/p'
