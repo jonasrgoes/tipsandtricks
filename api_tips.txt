@@ -4,3 +4,6 @@ https://api.randomuser.me/?nat=BR&results=5
 ## IMAGENS RANDOMICAS DE QUALQUER DIMENSÃO
 ## EXEMPLO IMAGEM RANDOMICA TAMANHO 100X100
 https://i.pravatar.cc/100
+
+## NOTÍCIAS
+https://hn.algolia.com/api/v1/search?query=react
