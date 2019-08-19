@@ -16,5 +16,12 @@ sed -e 's/\(.*\)/\L\1/'
 ### TO UPPER
 tr '[:lower:]' '[:upper:]'
 
+### CAPITALIZE
+TESTE='PERL JAVA PHP' && TESTE=`echo ${TESTE} | tr '[:upper:]' '[:lower:]'` && echo ${TESTE^}
+TESTE='PERL JAVA PHP' && TESTE=`echo ${TESTE} | tr '[:upper:]' '[:lower:]'` && echo ${TESTE^^[p,j]}
+
+### CAPITALIZE ALL WORDS
+echo 'PERL JAVA PHP' | sed -e 's/\(.*\)/\L\1/' | sed -r 's/\w+/\u&/g'
+
 ### REMOVER ACENTOS
 sed 'y/áÁàÀãÃâÂéÉêÊíÍóÓõÕôÔúÚçÇ\//aAaAaAaAeEeEiIoOoOoOuUcC-/'
