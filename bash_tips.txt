@@ -16,3 +16,5 @@ sed -e 's/\(.*\)/\L\1/'
 ### TO UPPER
 tr '[:lower:]' '[:upper:]'
 
+### REMOVER ACENTOS
+sed 'y/áÁàÀãÃâÂéÉêÊíÍóÓõÕôÔúÚçÇ\//aAaAaAaAeEeEiIoOoOoOuUcC-/'
