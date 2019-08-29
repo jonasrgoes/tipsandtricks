@@ -28,3 +28,27 @@ echo 'PERL JAVA PHP' | sed -e 's/\(.*\)/\L\1/' | sed -r 's/\w+/\u&/g'
 
 ### REMOVER ACENTOS
 sed 'y/áÁàÀãÃâÂéÉêÊíÍóÓõÕôÔúÚçÇ\//aAaAaAaAeEeEiIoOoOoOuUcC-/'
+
+### REMOVER EXTENSÃO DO NOME DO ARQUIVO
+${FILENAME%.txt}
+
+### CORES
+RED='\033[0;31m'
+NC='\033[0m'
+
+### TUDO EM 1 LINHA
+paste -sd' '
+
+### ESPAÇOS DUPLOS REMOVER
+sed 's/  */ /g'
+
+### ADICIONAR ELEMENTO EM UM ARRAY
+ARRAY=()
+ARRAY+=('ELEMENTO1')
+ARRAY+=('ELEMENTO2')
+
+### IMPRIMIR ARRAY 1 ELEMENTO POR LINHA
+printf "%s\n" "${ARRAY[@]}"
+
+### QUEBRA DE LINHA DO WINDOWS
+sed -i 's/$/^M/' ${TXT_RESULT}
