@@ -52,3 +52,6 @@ printf "%s\n" "${ARRAY[@]}"
 
 ### QUEBRA DE LINHA DO WINDOWS
 sed -i 's/$/^M/' ${TXT_RESULT}
+
+### CONTAR AS LINHAS DE UM CÓDIGO-FONTE
+find src public -type f | xargs wc -l | awk '{print $1}' | paste -sd+ - | bc
