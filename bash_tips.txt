@@ -55,3 +55,6 @@ sed -i 's/$/^M/' ${TXT_RESULT}
 
 ### CONTAR AS LINHAS DE UM CÓDIGO-FONTE
 find src public -type f | xargs wc -l | awk '{print $1}' | paste -sd+ - | bc
+
+### CRIAR UM ARQUIVO COM 10MB NO MAC OS X
+dd if=/dev/zero of=10MB.file bs=1m count=10
