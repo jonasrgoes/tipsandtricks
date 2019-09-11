@@ -58,3 +58,7 @@ find src public -type f | xargs wc -l | awk '{print $1}' | paste -sd+ - | bc
 
 ### CRIAR UM ARQUIVO COM 10MB NO MAC OS X
 dd if=/dev/zero of=10MB.file bs=1m count=10
+
+### IDENTIFICANDO NÚMEROS REPETIDOS
+### POR EXEMPLO NÃO ACEITA CPF: 444.444.444-44 
+cpf.match(/^(\d)\1+$/g)
