@@ -1,4 +1,9 @@
 /* 
+
+EXPORTAÇÃO GOOGLE FIREBASE TO GOOGLE SHEETS
+
+-> CRIA UMA SPREADSHET NO GOOGLE DRIVE POR USUÁRIO COM TODOS OS DADOS DE CADA UM
+
 ACESSAR EM: https://script.google.com/home/my
 - Em `Recursos > Bibliotecas` adicione a biblioteca **Firestore**:
     - `1VUSl4b1r1eoNcRWotZM3e87ygkxvXltOgyDZhixqncz9lQ3MjfT1iKFw`
