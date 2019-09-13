@@ -1,4 +1,4 @@
 # TIPS AND TRICKS FOR PROGRAMMERS
 
 ## BASH
-(BASH.md)
+(https://github.com/jonasrgoes/tipsandtricks/blob/master/BASH.md)
