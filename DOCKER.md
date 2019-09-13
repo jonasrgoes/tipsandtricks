@@ -1,3 +1,5 @@
+# DOCKER TIPS AND TRICKS
+
 ### REMOVER TODOS OS CONTAINERS
 `docker ps -a | awk '{print $1}' | sed 1d | paste -s -d' ' -`
 
