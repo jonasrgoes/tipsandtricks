@@ -1,3 +1,5 @@
+# BASH TIPS AND TRICKS 
+
 ### PATTERNS
 `[:alnum:], [:alpha:], [:cntrl:], [:digit:], [:graph:], [:lower:], [:print:], [:punct:], [:space:], [:upper:], [:xdigit:]`
 
@@ -37,11 +39,9 @@ TESTE='PERL JAVA PHP' && TESTE=`echo ${TESTE} | tr '[:upper:]' '[:lower:]'` && e
 `${FILENAME%.txt}`
 
 ### CORES
-```
-RED='\033[0;31m'
-NC='\033[0m'
-```
-NC='\033[0m'
+
+`RED='\033[0;31m'`
+`NC='\033[0m'`
 
 ### TUDO EM 1 LINHA
 `paste -sd' '`
