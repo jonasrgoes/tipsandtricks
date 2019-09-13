@@ -4,7 +4,7 @@ ACESSAR EM: https://script.google.com/home/my
     - `1VUSl4b1r1eoNcRWotZM3e87ygkxvXltOgyDZhixqncz9lQ3MjfT1iKFw`
     - `identificador: firestore`
 - Em `Recursos > Projeto do Cloud Plataform` adicione o Nº do Projeto: 
-    `783093011031`
+    `00000000000000`
 */
 
 var PROJECT_ID = 'advance-topic-??????';
