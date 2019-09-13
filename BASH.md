@@ -10,7 +10,8 @@
 
 ### VALOR PADRÃO PARA VARIÁVEIS
 ```
-${1:=20} Se não informado o primeiro parâmetro do comando então atribuirá o valor 20.
+comando param1 param2
+${1:=20} Se não informado o primeiro parâmetro do comando (param1) então atribuirá o valor 20.
 ${VARIAVEL:=10} Se a variável não tiver valor atribuído à ela, então retornará o valor 10.
 ```
 
