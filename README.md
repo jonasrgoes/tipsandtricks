@@ -8,3 +8,6 @@
 
 ### DOCKER TIPS AND TRICKS
 [DOCKER](DOCKER.md)
+
+### VALIDAR CPF E CNPJ
+[Validar CPF e CNPJ](Validar-CPF-CNPJ.md)
