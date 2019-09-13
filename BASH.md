@@ -1,4 +1,4 @@
-# BASH TIPS AND TRICKS :+1:
+# :+1: BASH TIPS AND TRICKS :+1:
 
 ### PATTERNS
 ```
