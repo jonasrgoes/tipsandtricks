@@ -8,6 +8,12 @@
 ### TRIM EM BASH 
 `awk '{$1=$1};1'`
 
+### VALOR PADRÃO PARA VARIÁVEIS
+```
+${1:=20} Se não informado o primeiro parâmetro do comando então atribuirá o valor 20.
+${VARIAVEL:=10} Se a variável não tiver valor atribuído à ela, então retornará o valor 10.
+```
+
 ### CAPTURAR EMAILS DE UM ARQUIVO TXT
 `grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b"`
 
