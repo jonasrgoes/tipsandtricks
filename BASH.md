@@ -1,7 +1,9 @@
 # BASH TIPS AND TRICKS 
 
 ### PATTERNS
-`[:alnum:], [:alpha:], [:cntrl:], [:digit:], [:graph:], [:lower:], [:print:], [:punct:], [:space:], [:upper:], [:xdigit:]`
+````
+[:alnum:], [:alpha:], [:cntrl:], [:digit:], [:graph:], [:lower:], [:print:], [:punct:], [:space:], [:upper:], [:xdigit:]
+`
 
 ### TRIM EM BASH 
 `awk '{$1=$1};1'`
