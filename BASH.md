@@ -71,5 +71,5 @@ ARRAY+=('ELEMENTO2')
 `dd if=/dev/zero of=10MB.file bs=1m count=10`
 
 ### IDENTIFICANDO NÚMEROS REPETIDOS
-#### POR EXEMPLO NÃO ACEITA CPF: 444.444.444-44 
+##### POR EXEMPLO NÃO ACEITA CPF: 444.444.444-44 
 `cpf.match(/^(\d)\1+$/g)`
