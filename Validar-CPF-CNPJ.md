@@ -2,6 +2,8 @@
 
 > Não aceita números repetidos ex: 444.444.444-44
 
+[Validar CPF e CNPJ em Javascript](VALIDAR_CPF_CNPJ.js)
+
 ## VALIDAR CPF
 ```
 function CPF(number) {
