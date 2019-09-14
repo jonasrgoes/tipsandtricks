@@ -27,3 +27,10 @@ Arquivo: vim-utf8
 vim -c "set encoding=utf8" -c "set termencoding=iso-8859-1" "$@"
 sudo cp bin/vim-utf8 /etc/skel/bin/
 ```
+
+### TIMEZONE
+```
+Arquivo: /etc/profile.d/sh.local
+TZ=America/Sao_Paulo
+LANG="pt_BR.UTF-8"
+```
