@@ -1,5 +1,13 @@
 # GIT TIPS AND TRICKS
 
+### GIT CONFIG
+ARQUIVO: `.gitconfig`
+```
+[user]
+email = jonasrgoes@gmail.com
+name = Jonas Roberto de Goes Filho
+```
+
 ### ARMAZENAR/SALVAR A SENHA
 `git config credential.helper store`
 
