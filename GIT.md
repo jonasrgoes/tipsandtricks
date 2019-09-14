@@ -1,7 +1,7 @@
 # GIT TIPS AND TRICKS
 
 ### GIT CONFIG
-ARQUIVO: `.gitconfig`
+Arquivo: `.gitconfig`
 ```
 [user]
 email = jonasrgoes@gmail.com
