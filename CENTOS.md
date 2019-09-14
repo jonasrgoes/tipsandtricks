@@ -19,3 +19,11 @@ export LANG="pt_BR.utf8"
 export LANGUAGE="pt_BR.utf8"
 export LC_ALL="pt_BR.utf8"
 ```
+
+### USAR VIM EM UTF-8
+```
+Arquivo: vim-utf8
+#!/bin/bash
+vim -c "set encoding=utf8" -c "set termencoding=iso-8859-1" "$@"
+sudo cp bin/vim-utf8 /etc/skel/bin/
+```
