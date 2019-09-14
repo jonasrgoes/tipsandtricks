@@ -6,7 +6,7 @@
 postmap /etc/postfix/sasl_passwd && chmod 600 /etc/postfix/sasl_passwd
 ```
 
-#### Arquivo /root/.forward
+#### Arquivo `/root/.forward`
 `jonasrgoes@gmail.com`
 
 #### Arquivo `/etc/postfix/main.cf`
