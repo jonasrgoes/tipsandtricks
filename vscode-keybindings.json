@@ -3,5 +3,9 @@
     {
         "key": "cmd+l",
         "command": "editor.action.formatDocument"
+    },
+    {
+        "key": "cmd+/",
+        "command": "editor.action.commentLine"
     }
 ]
