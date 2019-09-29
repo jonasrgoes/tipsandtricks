@@ -52,3 +52,28 @@ readme_directory = /usr/share/doc/postfix-2.10.1/README_FILES
 systemctl restart postfix
 echo "TESTE" | mail -s TESTANDO root
 ```
+
+# POSTFIX + IMAPS + SMTPS
+```
+systemctl enable saslauthd
+
+testsaslauthd -u testuser -p testpassword
+
+firewall-cmd --add-service={smtp-submission,smtps,imaps} --permanent
+
+firewall-cmd --zone=public --remove-service={smtp,imap} --permanent
+
+systemctl restart postfix dovecot
+
+yum --enablerepo=epel -y install certbot
+
+certbot certonly --webroot -w /var/www/html -d my.server.domain
+
+firewall-cmd --list-services
+
+firewall-cmd --list-ports
+
+firewall-cmd --reload
+
+
+```
