@@ -80,3 +80,6 @@ ARRAY+=('ELEMENTO2')
 ### IDENTIFICANDO NÚMEROS REPETIDOS
 ##### POR EXEMPLO NÃO ACEITA CPF: 444.444.444-44 
 `cpf.match(/^(\d)\1+$/g)`
+
+### REMOVENDO ARQUIVOS COM EXPRESSÃO REGULAR
+`find ~ -regextype posix-extended -regex '.*core\.([0-9])+$' -delete`
