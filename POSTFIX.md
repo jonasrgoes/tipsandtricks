@@ -1,5 +1,13 @@
 # POSTFIX
 
+## GREYLIST
+
+#### ARQUIVO `/etc/postfix/postgrey_whitelist_clients.local`
+
+```
+/.*\.websitewelcome\.com$/
+```
+
 ## SPAM
 
 ```
