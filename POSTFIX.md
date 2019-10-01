@@ -15,7 +15,7 @@ journalctl | grep action=greylist
 journalctl | grep spamd
 
 sa-learn --spam </path/to/spam/folder>
-sa-learn --ham </path/to/ham/folder>
+sa-learn --ham </path/to/inbox> (non-spam)
 ```
 
 #### ARQUIVO `/etc/mail/spamassassin/local.cf`
