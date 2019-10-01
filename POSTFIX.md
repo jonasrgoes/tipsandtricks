@@ -33,3 +33,10 @@ score LOCAL_UNSUBSCRIBE         0.1
 ## POSTFIX
 
 `postconf | grep message_size_limit`
+
+## FIREWALL
+
+```
+firewall-cmd --list-ports
+firewall-cmd --list-services
+```
