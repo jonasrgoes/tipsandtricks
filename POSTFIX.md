@@ -38,6 +38,8 @@ score LOCAL_UNSUBSCRIBE         0.1
 
 ```
 systemctl list-unit-files --state=enabled
+systemctl list-unit-files --type service --state enabled,generated
+
 systemctl list-units --type=service --state=running
 systemctl list-units --type=service --state=active
 ```
