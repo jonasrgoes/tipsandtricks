@@ -34,6 +34,14 @@ score LOCAL_UNSUBSCRIBE         0.1
 
 `postconf | grep message_size_limit`
 
+## SERVIÇOS
+
+```
+systemctl list-unit-files --state=enabled
+systemctl list-units --type=service --state=running
+systemctl list-units --type=service --state=active
+```
+
 ## FIREWALL
 
 ```
