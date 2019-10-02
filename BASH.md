@@ -83,3 +83,6 @@ ARRAY+=('ELEMENTO2')
 
 ### REMOVENDO ARQUIVOS COM EXPRESSÃO REGULAR
 `find ~ -regextype posix-extended -regex '.*core\.([0-9])+$' -delete`
+
+### LIST OF DIRS WITH ABSOLUTE PATHS - ONE IN EACH ROW
+`ls -d -1 /var/spool/mail/vhosts/example.com/*/.Junk `
