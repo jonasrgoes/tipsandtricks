@@ -37,9 +37,11 @@ score LOCAL_UNSUBSCRIBE         0.1
 
 `postconf | grep message_size_limit`
 
-## SERVIÇOS
+## SERVIÇOS `/usr/lib/systemd/system/`
 
 ```
+systemctl daemon-reload
+
 systemctl list-unit-files --state=enabled
 systemctl list-unit-files --type service --state enabled,generated
 
