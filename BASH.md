@@ -86,3 +86,15 @@ ARRAY+=('ELEMENTO2')
 
 ### LIST OF DIRS WITH ABSOLUTE PATHS - ONE IN EACH ROW
 `ls -d -1 /var/spool/mail/vhosts/example.com/*/.Junk `
+
+## SERVIÇOS `/usr/lib/systemd/system/`
+
+```
+systemctl daemon-reload
+
+systemctl list-unit-files --state=enabled
+systemctl list-unit-files --type service --state enabled,generated
+
+systemctl list-units --type=service --state=running
+systemctl list-units --type=service --state=active
+```
