@@ -66,6 +66,8 @@ razor-admin -register
 
 sa-learn --sync
 
+pyzor ping
+
 pyzor check
 
 pip install --upgrade pyzor
