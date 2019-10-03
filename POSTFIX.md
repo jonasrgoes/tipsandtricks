@@ -21,6 +21,8 @@ sa-learn --ham </path/to/inbox> (non-spam)
 #### ARQUIVO `/etc/mail/spamassassin/local.cf`
 
 ```
+man Mail::SpamAssassin::Conf
+
 required_hits 5
 required_score 5
 report_safe 0
