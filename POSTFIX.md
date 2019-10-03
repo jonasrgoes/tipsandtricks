@@ -55,3 +55,20 @@ systemctl list-units --type=service --state=active
 firewall-cmd --list-ports
 firewall-cmd --list-services
 ```
+## PYZOR RAZOR
+```
+firewall-cmd --permanent --add-port=2703/tcp
+firewall-cmd --permanent --add-port=24441/udp
+
+razor-admin -create
+razor-admin -discover
+razor-admin -register
+
+sa-learn --sync
+
+pyzor check
+
+pip install --upgrade pyzor
+
+spamassassin -t -D razor2 < /usr/share/doc/spamassassin-3.4.0/sample-spam.txt
+```
