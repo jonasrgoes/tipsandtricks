@@ -23,6 +23,8 @@ sa-learn --ham </path/to/inbox> (non-spam)
 ```
 man Mail::SpamAssassin::Conf
 
+spamassassin --lint -D 
+
 required_hits 5
 required_score 5
 report_safe 0
