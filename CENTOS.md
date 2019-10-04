@@ -42,7 +42,15 @@ LANG="pt_BR.UTF-8"
 ```
 firewall-cmd --direct --get-all-rules
 ipset list fail2ban-sshd
+```
+
+#### CHECK FAIL2BAN STATUS
+```
+fail2ban-client status sshd
+fail2ban-client status apache-common
+fail2ban-client status dovecot
+
 iptables -L -n
-zgrep 'Ban:' /var/log/fail2ban.log*
 iptables -L INPUT -v -n
+zgrep 'Ban:' /var/log/fail2ban.log*
 ```
