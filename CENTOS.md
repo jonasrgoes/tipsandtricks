@@ -34,3 +34,15 @@ Arquivo: /etc/profile.d/sh.local
 TZ=America/Sao_Paulo
 LANG="pt_BR.UTF-8"
 ```
+
+### SECURITY
+
+#### FAIL2BAN
+
+```
+firewall-cmd --direct --get-all-rules
+ipset list fail2ban-sshd
+iptables -L -n
+zgrep 'Ban:' /var/log/fail2ban.log*
+iptables -L INPUT -v -n
+```
