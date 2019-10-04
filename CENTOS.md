@@ -49,6 +49,7 @@ ipset list fail2ban-sshd
 fail2ban-client status sshd
 fail2ban-client status apache-common
 fail2ban-client status dovecot
+fail2ban-client status postfix-sasl
 
 route -n
 iptables -L -n
