@@ -50,6 +50,7 @@ fail2ban-client status sshd
 fail2ban-client status apache-common
 fail2ban-client status dovecot
 
+route -n
 iptables -L -n
 iptables -L INPUT -v -n
 zgrep 'Ban:' /var/log/fail2ban.log*
