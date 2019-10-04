@@ -56,3 +56,7 @@ iptables -L -n
 iptables -L INPUT -v -n
 zgrep 'Ban:' /var/log/fail2ban.log*
 ```
+
+#### FIREWALLD AVANÇADO
+
+[Firewalld](https://github.com/taw00/howto/blob/master/howto-configure-firewalld.md)
