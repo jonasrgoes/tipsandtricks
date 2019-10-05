@@ -41,6 +41,53 @@ LANG="pt_BR.UTF-8"
 
 Checking config `fail2ban-client reload`
 
+##### ARQUIVO `/etc/fail2ban/jail.local`
+
+```
+[DEFAULT]
+bantime  = 604800  ; 1 week
+findtime = 86400   ; 1 day
+banaction = iptables-allports
+
+[postfix]
+enabled = true
+maxretry = 1
+
+[postfix-sasl]
+enabled = true
+maxretry = 1
+
+[dovecot]
+enabled = true
+maxretry = 1
+
+[sshd]
+enabled = true
+port = 1234
+maxretry = 1
+
+[sshd-ddos]
+enabled = true
+port = 1234
+maxretry = 1
+
+[sendmail-reject]
+enabled = true
+maxretry = 1
+
+[apache-badbots]
+enabled = true
+maxretry = 1
+
+[apache-auth]
+enabled = true
+maxretry = 1
+
+[apache-botsearch]
+enabled = true
+maxretry = 1
+```
+
 ```
 firewall-cmd --direct --get-all-rules
 ipset list fail2ban-sshd
