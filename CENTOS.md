@@ -39,9 +39,12 @@ LANG="pt_BR.UTF-8"
 
 #### FAIL2BAN
 
+Checking config `fail2ban-client reload`
+
 ```
 firewall-cmd --direct --get-all-rules
 ipset list fail2ban-sshd
+ipset list fail2ban-postfix-sasl
 ```
 
 #### CHECK FAIL2BAN STATUS
