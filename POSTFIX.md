@@ -7,6 +7,9 @@
 ```
 /.*\.websitewelcome\.com$/
 ```
+## CONTROLANDO SPAM COM SIEVE
+
+`sievec /etc/dovecot/sieve/default.sieve`
 
 ## SPAM
 
