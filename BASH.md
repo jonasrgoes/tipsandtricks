@@ -8,6 +8,9 @@
 ### TRIM EM BASH 
 `awk '{$1=$1};1'`
 
+### STRING LENGTH
+`echo "--- What about this line? ---" | awk '{print length}'`
+
 ### VALOR PADRÃO PARA VARIÁVEIS
 ```
 comando param1 param2
