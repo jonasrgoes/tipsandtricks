@@ -11,6 +11,9 @@
 ### STRING LENGTH
 `echo "--- What about this line? ---" | awk '{print length}'`
 
+### REMOVER COMENTÁRIOS HTML
+`sed -e :a -re 's/<!--.*?-->//g;/<!--/N;//ba'`
+
 ### VALOR PADRÃO PARA VARIÁVEIS
 ```
 comando param1 param2
